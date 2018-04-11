@@ -6,8 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Product.destroy_all
 
-Product.new(
-  name: "1000 Piece Jigsaw Puzzle", release_date: "2013-04-27", price: 0.1499e2, created_at: "2018-04-11 16:57:59", updated_at: "2018-04-11 16:57:59"
-)
+ActiveRecord::Base.connection.tables.each do |t|
+  ActiveRecord::Base.connection.reset_pk_sequence!(t)
+end
 
+51.times do |i|
+  Product.create(
+    name: "#{i+1000} Piece Jigsaw Puzzle", 
+    release_date: "2013-04-27", 
+    price: 14.99)
+end 
