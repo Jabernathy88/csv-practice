@@ -13,10 +13,6 @@ old_table.select do |row|
   age_in_days << (row["Age (years)"].to_i * 365).to_s
 end 
 
-CSV.foreach('./src/diabetes.csv', converters: :numeric) do |row|
-  age_in_days << age_in_years * 365
-end 
-
 CSV.open('./output.csv', 'w') do |new_table|
   new_table << new_header_array
   old_table.each do |old_row|
