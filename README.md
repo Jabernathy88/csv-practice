@@ -1,24 +1,11 @@
-# README
+# CSV Practice
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Based on two tutorials
 
-Things you may want to cover:
+1. Railscasts "Products" CSV
 
-* Ruby version
+Deployed at [homepage]()
 
-* System dependencies
+2. GoRails "Users" CSV 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployed at [users subpage]
