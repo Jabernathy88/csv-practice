@@ -4,8 +4,8 @@ Based on two tutorials
 
 1. Railscasts "Products" CSV
 
-Deployed at [homepage]()
+Deployed at [App homepage](https://csv-practice-jabernathy.herokuapp.com/)
 
 2. GoRails "Users" CSV 
 
-Deployed at [users subpage]
+Deployed at [Users index](https://csv-practice-jabernathy.herokuapp.com/users)
